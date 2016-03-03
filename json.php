@@ -1,33 +1,36 @@
 <?php
 session_start();
 date_default_timezone_set('America/Mexico_City');
+
 include_once('user.php');
+
 if( empty($_POST) ) header("HTTP/1.1 500 Internal Server Error");
 header('Content-Type: application/json');
+
 $user = new User();
 switch(@$_POST['method']){
   case 'save_user':
-		$name = $_POST['nombre'];
-		$lastname = $_POST['apellido'];
-		$phone = $_POST['telefono'];
-		$mail = $_POST['correo'];
-		$business_name = $_POST['razon_social'];
+		$name = $_POST['name'];
+		$lastname = $_POST['lastname'];
+		$phone = $_POST['phone'];
+		$mail = $_POST['mail'];
+		$business_name = $_POST['business_name'];
 		$plaza = $_POST['plaza'];
 		$contado = $_POST['contado'];
-		$credit = $_POST['credito'];
-		$hosting = $_POST['hospedaje'];
+		$credit = $_POST['credit'];
+		$hosting = $_POST['hosting'];
 		$sin_hospedaje = $_POST['sin_hospedaje'];
 
 		evaluate($name, 'nombre');
 		evaluate($lastname, 'apellido');
 		evaluate($phone, 'teléfono', 'isPhone');
 		evaluate($mail, 'correo', 'isEmail');
-		evalute($business_name, 'razon_social', 'isBusiness_name');
-		evaluate($plaza, 'plaza', 'isPlaza');
-		evaluate($contado, 'contado', 'isContado');
-		evaluate($credit, 'credito', 'isCredit');
-		evaluate($hosting, 'hospedaje', 'isHosting');
-		evaluate($sin_hospedaje, 'sin_hospedaje', 'isSin_hospedaje');
+		evalute($business_name, 'razon_social');
+		evaluate($plaza, 'plaza');
+		evaluate($contado, 'contado');
+		evaluate($credit, 'credito');
+		evaluate($hosting, 'hospedaje');
+		evaluate($sin_hospedaje, 'sin_hospedaje');
 		
 		$id = $user->exist($mail);
 		if(!$id) $id = $user->create($name, $lastname, $phone, $mail, $business_name, $plaza, $contado, $credit, $hosting, $sin_hospedaje);

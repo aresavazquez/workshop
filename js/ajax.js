@@ -14,6 +14,7 @@ $(document).on('ready', function(){
 			hosting: $ ('#formHospedaje').val(),
 			sin_hospedaje: $('#formSinHospedaje').val()
 		};
+		console.log(formData);
 		$('.loading').show();
 		$.post('json.php', formData, function(response){
 			$('.loading').hide();
