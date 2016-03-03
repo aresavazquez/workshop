@@ -1,0 +1,522 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'MuseoSans',sans-serif;
+}
+p{
+	color: #415460;
+}
+h1{
+	color: #415460;
+	font-size: 50px;
+}
+.video-back{
+	height: 300px;
+	width: 100%;
+}
+/*sección 1 home*/
+.video{
+	background: #000;
+	width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.video video{
+	width: 100%;
+}
+.cdmx{
+	height: 100%;
+	width: 100%;
+	/*background: url(../img/workshop/back.jpg)no-repeat center fixed;*/
+	background-size: cover;
+	position: relative;
+}
+.cdmx img{
+    padding: 150px 100px 50px;
+}
+.cdmx p{
+    font-size: 20px;
+    padding: 0px 100px 50px;
+    color: #fff;
+}
+.cdmx .line{
+    background: #fff;
+    width: 550px;
+    height: 1px;
+}
+.cdmx .date{
+    padding: 45px 100px 50px;
+    font-size: 35px;
+}
+/*sección 2 degradado*/
+.degradado{
+	background: url(../img/workshop/content_separator.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+/*sección 3 broker*/
+.broker{
+    padding: 100px;
+    position: relative;
+    background: #fff;
+}
+/*sección 4 photo*/
+.photo-cdmx{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.photo-cdmx .img-1{
+	background: url(../img/workshop/cultura.jpg)no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+.photo-cdmx .img-2{
+	background: url(../img/workshop/paisajes.jpg)no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+.photo-cdmx .img-3{
+	background: url(../img/workshop/espectaculos.jpg)no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+.photo-cdmx .img-4{
+	background: url(../img/workshop/espectaculos.jpg)no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+.photo-cdmx .img-4{
+	background: url(../img/workshop/gente.jpg)no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+.titulo-seccion{
+	position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: #ed0688;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    height: 125px;
+    font-weight: 900;
+    width: 320px;
+}
+.slogan{
+	position: absolute;
+    z-index: 2;
+    font-size: 21px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    height: 125px;
+    font-weight: 100;
+    top: -53px;
+    top: 225px;
+}
+.titulo-seccion span{
+	font-weight: 100;
+	color: #fff;
+}
+.photo-cdmx div .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.photo-cdmx div .box.one{
+	background: rgba(0, 0, 0, .7);
+}
+.photo-cdmx div .box.two{
+	background: rgba(0, 0, 0, .7);
+}
+.photo-cdmx div .box.one p{
+    color: #fff;
+    font-weight: 100;
+    width: 65%;
+    text-align: justify;
+    padding-top: 40px;
+    margin: auto;
+    opacity: 0;
+    display: none;
+}
+.photo-cdmx div .box.two p{
+    color: #fff;
+    font-weight: 100;
+    width: 65%;
+    text-align: justify;
+    padding-top: 40px;
+    margin: auto;
+    opacity: 0;
+    display: none;
+}
+.photo-cdmx div .box.three{
+	background: rgba(0, 0, 0, .7);
+}
+.photo-cdmx div .box.four{
+	background: rgba(0, 0, 0, .7);
+}
+.photo-cdmx div .box h1{
+    text-align: center;
+    color: #ddd;
+    padding-top: 100px;
+    width: 200px;
+    margin: auto;
+    border-bottom: 1px solid;
+    padding-bottom: 25px;
+    display: none;
+    opacity: 0;
+}
+/*programa*/
+.programa{
+	background: rgba(0, 0, 0, .5);
+	position: relative;
+}
+.programa div{
+	height: 160px;
+}
+.programa p{
+    font-size: 50px;
+    text-align: center;
+    padding: 0 0 100px;
+    font-weight: 700;
+    color: #fff;
+}
+.programa table{
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 100px;
+    width: 900px;
+}
+.programa table tr th{
+    font-size: 30px;
+    padding-bottom: 25px;
+    font-weight: 100;
+    color: #fff;
+}
+.programa table tr td{
+    padding: 5px;
+    border-top: 1px solid;
+    height: 35px;
+    color: #fff;
+}
+.blue{
+	color: #428bca !important;
+	font-weight: bold;
+}
+/*lugares*/
+.places{
+	width: 100%;
+	background: #fff;
+	position: relative;
+	height: auto;
+}
+.places .option{
+	width: 100%;
+	height: 100%;
+    position: relative;
+}
+.places .option .text{
+	width: 100%;
+	height: 500px;
+}
+.places .option .text .title{
+	font-size: 50px;
+    padding: 60px 0 0;
+    font-weight: 700;
+    text-align: center;
+}
+.places .option .text p {
+    padding: 100px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
+    color: #617e8c;
+    width: 50%;
+    margin: auto;
+}
+.places .option .text p strong{
+	font-size: 20px;
+    font-weight: 100;
+    color: #415460;
+}
+.places .option .text img{
+	display: none;
+}
+.places .option .back-image.uno{
+	width: 100%;
+	height: 100%;
+}
+.places .option .back-image.uno video{
+    width: 100%
+}
+.places .option .back-image.dos video{
+    width: 100%
+}
+.places .option .back-image.tres video{
+    width: 100%
+}
+.places .option .back-image.cuatro video{
+    width: 100%;
+}
+/*hotel*/
+.hotel{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.hotel .logo{
+    width: 400px;
+    margin: auto;
+    display: block;
+    padding-top: 100px;
+}
+.table-mobile{
+	display: none;
+}
+.contacto{
+	position: relative;
+    background: #fff;
+    height: 160px;
+    text-align: center;
+    padding: 36px;
+}
+.contacto p{
+    line-height: 40px;
+    font-weight: 100;
+    color: #428bca;
+}
+.contacto a{
+    line-height: 40px;
+    font-weight: 100;
+    color: #617e8c;
+    font-style: italic;
+    text-decoration: none;
+    color: #428bca;
+}
+.registro{
+	position: relative;
+	background: #fff;
+	height: 700px;
+	width: 100%;
+}
+.registro .title {
+    font-size: 50px;
+    padding: 60px 0 0;
+    font-weight: 700;
+    text-align: center;
+}
+.registro form{
+    position: relative;
+    display: block;
+    width: 585px;
+    margin: 70px auto;
+}
+.registro form input{
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #415460;
+    border-radius: 5px;
+}
+.registro form .radio{
+    width: 30px;
+}
+.registro form p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.registro form label{
+    padding: 10px;
+    color: #415460;
+}
+.registro form .loading{
+    display: none;
+}
+.registro form .select{
+    opacity: 0;
+    background: #ddd;
+    border: none;
+    width: 250px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #415460;
+    height: 40px;
+}
+@media screen and (max-width: 1024px){
+	.video video {
+	    height: 100%;
+	    width: auto;
+	}
+	.places .option .text p {
+	    width: 80%;
+	}
+	.cdmx img {
+	    padding: 200px 100px 50px;
+	}
+	.photo-cdmx div .box h1{
+	    display: block;
+	    opacity: 1;
+	}
+	.photo-cdmx div .box.one p {
+	    width: 85%;
+	    opacity: 1;
+	    display: block;
+	}
+	.photo-cdmx div .box.two p {
+	    width: 85%;
+	    opacity: 1;
+	    display: block;
+	}
+	.photo-cdmx div .box.three p {
+	    width: 85%;
+	    opacity: 1;
+	    display: block;
+	}
+	.photo-cdmx div .box.four p {
+	    width: 85%;
+	    opacity: 1;
+	    display: block;
+	}
+}
+@media screen and (max-width: 768px){
+	.programa table {
+	    width: 700px;
+	}
+	.programa table tr td {
+	    font-size: 16px;
+	}
+	.places .option .text p {
+	    padding: 50px 0;
+	    width: 80%;
+	}
+}
+@media screen and (max-width: 640px){
+	.programa table {
+	    width: 268px;
+    	margin: auto;
+    	display: block;
+	}
+	.places .option .text .title {
+	    font-size: 40px;
+	}
+	.programa .table-desktop{
+		display: none;
+	}
+	.programa .table-mobile{
+		display: block;
+	}
+	.places .option .text p strong {
+	    font-size: 20px;
+	}
+	.places .option .text img{
+	    height: 200px;
+	    display: block;
+	    width: 100%;
+	}
+	.places .option .text {
+	    height: auto;
+	}
+	iframe{
+		display: none;
+	}
+	.places .option .back-image.uno video{
+		display: none;
+	}
+	.places .option .back-image.dos video{
+		display: none;
+	}
+	.places .option .back-image.tres video{
+		display: none;
+	}
+	.places .option .back-image.cuatro video{
+		display: none;
+	}
+	.video{
+	    background: url(../img/workshop/back_phone.jpg)no-repeat;
+	    width: 100%;
+	    height: 100%;
+	    background-size: cover;
+	}
+	.video video {
+	    display: none;
+	}
+	.cdmx img {
+	    padding: 100px 0 30px;
+	    width: 225px;
+	    margin: auto;
+	    display: block;
+	}
+	.cdmx p {
+	    font-size: 15px;
+	    padding: 0px 50px 20px;
+	}
+	.cdmx .line {
+	    width: 225px;
+	    margin: auto;
+	}
+	.cdmx .date {
+	    padding: 25px 50px;
+	    font-size: 15px;
+	}
+	.broker {
+	    padding: 30px;
+	}
+	.photo-cdmx {
+	    display: block;
+	    flex-wrap: nowrap;
+	}
+	.photo-cdmx .img-1 {
+	    width: 100%;
+	}
+	.photo-cdmx .img-2 {
+	    width: 100%;
+	}
+	.photo-cdmx .img-3 {
+	    width: 100%;
+	}
+	.photo-cdmx .img-4 {
+	    width: 100%;
+	}
+	.titulo-seccion {
+	    font-size: 60px;
+	    height: 102px;
+	}
+	.slogan {
+	    font-size: 15px;
+	    height: 200px;
+	}
+	.programa p {
+	    font-size: 38px;
+	}
+}
+
