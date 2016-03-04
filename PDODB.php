@@ -31,6 +31,7 @@ class PDODB{
 		}
 		$fieldsstr = implode( ', ', $fields );
 		$fieldsval = ':' . implode( ', :', $fields );
+		echo "INSERT INTO " . $this->table . " ( $fieldsstr, created_at ) value ( $fieldsval, NOW() )";
 		$STH = $this->DBH->prepare("INSERT INTO " . $this->table . " ( $fieldsstr, created_at ) value ( $fieldsval, NOW() )");
 		$STH->execute( $data );
 		return $this->DBH->lastInsertId();
