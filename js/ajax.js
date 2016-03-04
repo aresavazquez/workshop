@@ -21,6 +21,7 @@ $(document).on('ready', function(){
 			  alert(response.data);
 				console.log(response);
 			}else{
+				alert('completa el campo');
 				$('.error').text(response.error);
 			}
 		});

@@ -286,7 +286,7 @@
 	<div class="registro">
 		<p class="title">Registro</p>
 		<form action="/" method="post" id="form">
-			<input type="text" placeholder="Nombre" id="formName" name="">
+			<input type="text" placeholder="Nombre" id="formName" name="name">
 			<input type="text" placeholder="Apellido" id="formLastName" name="">
 			<input type="number" placeholder="Teléfono" id="formPhone" name="" required>
 			<input type="text" placeholder="Correo" id="formMail" name="" required>
@@ -305,9 +305,9 @@
 			<input type="radio" value="2" name="paquete" class="radio">
 			<br>
 			<select id="formHabitacion" class="select">
-				<option>Tipo de habitación</option>
-				<option>Habitación sencilla</option>
-				<option>Habitación doble</option>
+				<option values="0">Tipo de habitación</option>
+				<option values="1">Habitación sencilla</option>
+				<option values="2">Habitación doble</option>
 			</select>
 			<br>
 			<input type="submit" class="send">

@@ -6,7 +6,7 @@ class User extends PDODB{
 		$this->table = 'users';
 	}
 	public function create( $a, $b, $c, $d, $e, $f, $g, $h, $i){
-		$data = array("nombre" => $a, "apellido" => $b, "telefono" => $c, "mail" => $d, "razon_social"=> $e, "plaza" => $f, "tipo_pago" => $g, "paquete" => $h, "tipo_habitacion" => $i);
+		$data = array("nombre" => $a, "apellido" => $b, "telefono" => $c, "correo" => $d, "razon_social"=> $e, "plaza" => $f, "id_tipo_pago" => $g, "id_paquete" => $h, "id_tipo_habitacion" => $i);
 		$result = $this->_insert( $data );
 		return $result;
 	}
