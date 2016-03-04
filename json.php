@@ -25,7 +25,7 @@ switch(@$_POST['method']){
 		evaluate($lastname, 'apellido');
 		evaluate($phone, 'teléfono', 'isPhone');
 		evaluate($mail, 'correo', 'isEmail');
-		evalute($business_name, 'razon_social');
+		evaluate($business_name, 'razon_social');
 		evaluate($plaza, 'plaza');
 		evaluate($contado, 'contado');
 		evaluate($credit, 'credito');
