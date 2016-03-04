@@ -27,7 +27,7 @@ switch(@$_POST['method']){
 		evaluate($business_name, 'razon_social');
 		evaluate($plaza, 'plaza');
 		evaluate($tipo_pago, 'tipo_pago');
-		evaluate($hospedaje, 'hospedaje');
+		evaluate($paquete, 'paquete');
 		evaluate($tipo_habitacion, 'tipo_habitacion');
 		
 		$id = $user->exist($mail);
