@@ -39,11 +39,11 @@ $(document).on('ready', function(){
     	TweenLite.to('.four h1', 2, {ease: Power3.easeOut, y: 0, opacity: 0, display: 'none'});
     });
 /*-------------*/
-    $('#hospedaje').on('click', function(){
-        TweenLite.to('.select', .3, {opacity: 1});
-    });
-    $('#sinHospedaje').on('click', function(){
-        TweenLite.to('.select', .3, {opacity: 0});
-    });
+    //$('#hospedaje').on('click', function(){
+    //    TweenLite.to('.select', .3, {opacity: 1});
+    //});
+    //$('#sinHospedaje').on('click', function(){
+    //    TweenLite.to('.select', .3, {opacity: 0});
+    //});
 /*-------------*/
 });
