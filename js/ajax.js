@@ -7,12 +7,11 @@ $(document).on('ready', function(){
 			lastname: $('#formLastName').val(),
 			phone: $('#formPhone').val(),
 			mail: $('#formMail').val(),
-			business_name: $('#formBusiness').val(),
 			plaza: $('#formPlaza').val(),
-			contado: $('#formContado').val(),
-			credit: $('#formCredit').val(),
-			hosting: $ ('#formHosting').val(),
-			sin_hospedaje: $('#formSinHospedaje').val()
+			business_name: $('#formBusiness').val(),
+			tipo_pago: $('input[name="pago"]:checked').val(),
+			paquete: $('input[name="paquete"]:checked').val(),
+			tipo_habitacion: $ ('#formHabitacion').val()
 		};
 		console.log(formData);
 		$('.loading').show();
