@@ -361,7 +361,7 @@ h1{
     display: none;
 }
 .registro form .select{
-    opacity: 0;
+    /*opacity: 0;*/
     background: #ddd;
     border: none;
     width: 250px;

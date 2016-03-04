@@ -46,33 +46,4 @@ $(document).on('ready', function(){
         TweenLite.to('.select', .3, {opacity: 0});
     });
 /*-------------*/
-    $('.send').on('click', function(e){
-        e.preventDefault();
-        var formData = {                                                                                                   
-            method: 'save_user',
-            razon: $('#formReason').val(),
-            nombre: $('#formName').val(),
-            telefono: $('#formPhone').val(),
-            mail: $('#formMail').val(),
-            plaza: $('#formPlaza').val()
-        };
-        $('.loading').show();
-        $.post('json.php', formData, function(response){
-            $('.loading').hide();
-            if(response.code == 200){
-                var tl = new TimelineLite();
-                //TweenLite.set('.ficha', {display: "block"});
-                //TweenLite.set('.ruleta', {display: "block"});
-                //TweenLite.set('.flecha', {display: "block"});
-                //tl.to('form', 1, { display: "none", opacity: 0, ease: Power2.easeOut, y: 200});
-                //tl.from('.ficha', 1, { opacity: 0, ease: Power2.easeOut, y: -30, rotation: "-450deg"});
-                //tl.from('.ruleta', 1, { opacity: 0, ease: Power2.easeOut, y: -30, rotation: "-450deg"}, "-=1");
-                //tl.from('.flecha', .4, { opacity: 0, ease: Power2.easeOut, y: -30});
-                //tl.to('.jugar', .4, { display: "block", opacity: 1});
-                //tl.to('.jugar', 1, {scale:1.3, repeat:-1, yoyo:true});
-            }else{
-                $('.error').text(response.error);
-            }
-        });
-    });
 });

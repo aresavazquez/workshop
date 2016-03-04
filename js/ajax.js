@@ -10,8 +10,8 @@ $(document).on('ready', function(){
 			business_name: $('#formBusiness').val(),
 			plaza: $('#formPlaza').val(),
 			contado: $('#formContado').val(),
-			credit: $('#formCredito').val(),
-			hosting: $ ('#formHospedaje').val(),
+			credit: $('#formCredit').val(),
+			hosting: $ ('#formHosting').val(),
 			sin_hospedaje: $('#formSinHospedaje').val()
 		};
 		console.log(formData);
