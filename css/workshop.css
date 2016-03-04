@@ -518,5 +518,24 @@ h1{
 	.programa p {
 	    font-size: 38px;
 	}
+	.registro{
+		height: auto;
+	}
+	.registro form input{
+		display: block;
+		margin: 20px auto;
+	}
+	.registro form .radio{
+		display: relative;
+		margin: 20px auto;
+	}
+	.registro form select{
+		margin: 20px auto !important;
+		display: block;
+	}
+	.registro form {
+	    width: 100%;
+	    margin: 0;
+	}
 }
 
