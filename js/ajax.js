@@ -9,10 +9,9 @@ $(document).on('ready', function(){
 			mail: $('#formMail').val(),
 			business_name: $('#formBusiness').val(),
 			plaza: $('#formPlaza').val(),
-			contado: $('#formContado').val(),
-			credit: $('#formCredit').val(),
-			hosting: $ ('#formHosting').val(),
-			sin_hospedaje: $('#formSinHospedaje').val()
+			tipo_pago: $('tipo_pago').val(),
+			paquete: $('paquete').val(),
+			tipo_habitacion: $('tipo_habitacion').val()
 		};
 		console.log(formData);
 		$('.loading').show();

@@ -368,7 +368,6 @@ h1{
     margin: 10px;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
     color: #415460;
     height: 40px;
 }
@@ -520,13 +519,14 @@ h1{
 	}
 	.registro{
 		height: auto;
+		padding-bottom: 50px;
 	}
 	.registro form input{
 		display: block;
 		margin: 20px auto;
 	}
 	.registro form .radio{
-		display: relative;
+		display: inline;
 		margin: 20px auto;
 	}
 	.registro form select{
@@ -536,6 +536,12 @@ h1{
 	.registro form {
 	    width: 100%;
 	    margin: 0;
+	}
+	.registro form label{
+	    padding-left: 20px;
+	}
+	.registro form p{
+	    padding-left: 20px;
 	}
 }
 

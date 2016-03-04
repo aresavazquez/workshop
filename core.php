@@ -1,5 +1,5 @@
 <?php
-	define('DB_HOST', 'localhost');
-	define('DB_USR', 'root');
-	define('DB_PWD', '');
-	define('DB_NAME', 'Workshop');
+	define('DB_HOST', 'digitaldealers.mx');
+	define('DB_USR', 'ares');
+	define('DB_PWD', 'ares');
+	define('DB_NAME', 'ares_101');

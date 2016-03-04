@@ -16,10 +16,9 @@ switch(@$_POST['method']){
 		$mail = $_POST['mail'];
 		$business_name = $_POST['business_name'];
 		$plaza = $_POST['plaza'];
-		$contado = $_POST['contado'];
-		$credit = $_POST['credit'];
-		$hosting = $_POST['hosting'];
-		$sin_hospedaje = $_POST['sin_hospedaje'];
+		$tipo_pago = $_POST['tipo_pago'];
+		$paquete = $_POST['paquete'];
+		$tipo_habitacion = $_POST['tipo_habitacion'];
 
 		evaluate($name, 'nombre');
 		evaluate($lastname, 'apellido');
@@ -27,17 +26,16 @@ switch(@$_POST['method']){
 		evaluate($mail, 'correo', 'isEmail');
 		evaluate($business_name, 'razon_social');
 		evaluate($plaza, 'plaza');
-		evaluate($contado, 'contado');
-		evaluate($credit, 'credito');
-		evaluate($hosting, 'hospedaje');
-		evaluate($sin_hospedaje, 'sin_hospedaje');
+		evaluate($tipo_pago 	, 'tipo_pago');
+		evaluate($hospedaje, 'hospedaje');
+		evaluate($tipo_habitacion, 'tipo_habitacion');
 		
 		$id = $user->exist($mail);
-		if(!$id) $id = $user->create($name, $lastname, $phone, $mail, $business_name, $plaza, $contado, $credit, $hosting, $sin_hospedaje);
+		if(!$id) $id = $user->create($name, $lastname, $phone, $mail, $business_name, $plaza, $tipo_pago , $hospedaje, $tipo_habitacion);
 		//$_SESSION['id'] = base64_encode($id);
 		response($id);
 		break;
-}
+
 function response($data){
 	$result = array('code' => 200, 'data' => $data, 'error' => null);
 	echo json_encode($result);
